@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="titre">Coucou</h1>
+    <!-- div parent -->
+    <div class="row w-100 test switch">
+        <!-- Child # 1 -->
+        <div class="bg-green">
+            <h2> child 1.1 </h2>
+            <h2> child 1.2 </h2>
+            <h2> child 1.3 </h2>
+        </div>
+
+        <!-- Child # 2 -->
+        <div class="bg-yellow row">
+            <h2> child 2.1 </h2>
+            <h2> child 2.2 </h2>
+            <h2> child 2.3 </h2>
+        </div>
+
+        <!-- Child # 3 -->
+        <div class="bg-red">
+            <h2> child 3.1 </h2>
+            <h2> child 3.2 </h2>
+            <h2> child 3.3 </h2>
+        </div>
+    </div>
+
+    <button id="btn"> TEST BTN </button>
+
+    <script>
+
+        const btn = document.getElementById('btn')
+        const titre = document.getElementById('titre')
+        const newTitre = prompt('Entrez un titre')
+
+        titre.textContent = newTitre
+
+        btn.addEventListener('click', () => {
+            alert('Vous avez clickez sur mon merveilleux button')
+        })
+
+    </script>
+
+</body>
+
+</html>
