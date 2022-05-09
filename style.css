@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#titre {
+  color: blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.bg-green {
+  background-color: green;
+}
+.bg-yellow {
+  background-color: yellow;
+}
+.bg-red {
+  background-color: red;
+}
+
+.test {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 720px) {
+    body {
+        background-color: pink
+    }
+    .switch {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 720px) {
+    body {
+        background-color: black
+    }
+}
+
+@media (min-width: 1250px) {
+    body {
+        background-color: lime
+    }
+}
+
